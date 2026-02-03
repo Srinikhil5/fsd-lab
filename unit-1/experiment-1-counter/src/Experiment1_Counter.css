@@ -1,0 +1,62 @@
+.counter-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  background: radial-gradient(circle at top, #1c1c1c, #0b0b0b);
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.count {
+  font-size: 1.4rem;
+  opacity: 0.9;
+  color: white;
+}
+
+/* Button layout */
+.button-group {
+  display: flex;
+  gap: 20px;
+}
+
+.glass-btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.glass-btn:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-2px);
+}
+
+.glass-btn:active {
+  transform: translateY(0);
+}
+
+/* Optional danger style */
+.glass-btn.danger {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
